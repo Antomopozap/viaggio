@@ -1,0 +1,22 @@
+{
+  "name": "viaggio",
+  "version": "1.0.0",
+  "description": "Giorgia e stupida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antomopozap/viaggio"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antomopozap/viaggio/issues"
+  },
+  "homepage": "https://github.com/Antomopozap/viaggio#readme",
+  "dependencies": {
+    "quicklink": "^2.3.0"
+  }
+}

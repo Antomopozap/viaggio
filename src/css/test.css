@@ -1,0 +1,7 @@
+h1 {
+  color: brown;
+}
+.contenedor{
+  max-width: 120rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,252 @@
+:root {
+  --accent: #8ac1e6;
+  --bianco: #fff;
+  --nav: #0b5394;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  color: #252525;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: var(--nav);
+}
+.nav-name {
+  color: var(--bianco);
+}
+
+.logo {
+  left: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.logo h4 {
+  position: absolute;
+  top: 4vh;
+  transform: translateY(-50%);
+  left: 100px;
+}
+.logo img {
+  top: 4vh;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0 !important;
+  object-fit: contain;
+}
+.logo :hover {
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.active {
+  color: var(--accent);
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--bianco);
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+.burger {
+  position: absolute;
+  top: 4vh;
+  transform: translateY(-50%);
+  right: 25px;
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .nav-links {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .nav-links {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .logo {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .active-nav {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: var(--nav);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translatex(0);
+  transition: all 0.5s ease-in;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes navLinkFade2 {
+  from {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-item {
+  position: relative;
+  color: var(--accent) !important;
+}
+.active-nav {
+  height: 2px;
+  background-color: var(--accent);
+  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  opacity: 0;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 71.48px;
+  stroke-dashoffset: 71.48px;
+  animation: lineanim 2s ease forwards;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 79.54px;
+  stroke-dashoffset: 79.54px;
+  animation: lineanim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 60.81px;
+  stroke-dashoffset: 60.81px;
+  animation: lineanim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 85.99px;
+  stroke-dashoffset: 85.99px;
+  animation: lineanim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 80.87px;
+  stroke-dashoffset: 80.87px;
+  animation: lineanim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 55.48px;
+  stroke-dashoffset: 55.48px;
+  animation: lineanim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 55.48px;
+  stroke-dashoffset: 55.48px;
+  animation: lineanim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(9) {
+  stroke-dasharray: 79.54px;
+  stroke-dashoffset: 79.54px;
+  animation: lineanim 2s ease forwards 2.1s;
+}
+#logo path:nth-child(10) {
+  stroke-dasharray: 85.5px;
+  stroke-dashoffset: 85.5px;
+  animation: lineanim 2s ease forwards 2.4s;
+}
+#logo path:nth-child(11) {
+  stroke-dasharray: 74.67px;
+  stroke-dashoffset: 74.67px;
+  animation: lineanim 2s ease forwards 2.7s;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 143.6px;
+  stroke-dashoffset: 143.6px;
+  animation: lineanim 2s ease forwards 3s;
+}
+
+@keyframes lineanim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.pags--libro {
+  max-width: 110rem;
+  align-items: center;
+  margin: 2rem;
+}
+.pags {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
