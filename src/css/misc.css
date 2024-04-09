@@ -1,1 +1,6 @@
-
+#container {
+  background-color: rgb(4, 2, 19);
+  color: white !important;
+  min-height: 92vh;
+  width: 100vw;
+}
