@@ -14,7 +14,7 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-  border: 5px solid white;
+  border: 5px solid var(--accent);
 }
 .price h1 {
   font-size: xx-large;
@@ -34,17 +34,23 @@
 }
 .price button {
   position: absolute;
-  bottom: 0;
-  height: 15vh;
+  bottom: 3vh;
+  height: 10vh;
   background-color: black;
   text-align: center;
-  width: 100%;
-  border: 1px;
+  width: 55%;
+  border: 1px solid var(--accent);
   font-size: x-large;
   font-weight: bolder;
+  border-radius: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.button-spain button:hover {
+.price-spain:hover {
   cursor: pointer;
+}
+.price-dis:hover {
+  cursor: not-allowed;
 }
 .price-list {
   position: absolute;
