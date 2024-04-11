@@ -4,3 +4,37 @@
   min-height: 92vh;
   width: 100vw;
 }
+#death {
+  height: 92vh;
+  width: 100vw;
+}
+.morte {
+  font-weight: 400;
+  font-style: normal;
+  width: 3rem;
+  height: 3rem;
+  background-color: #070329;
+}
+#btncontainer {
+  position: absolute;
+  bottom: 0;
+  gap: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.morte {
+  border-radius: 1rem;
+}
+
+.slide {
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 2rem;
+}
+#pag1 {
+  z-index: 3;
+}

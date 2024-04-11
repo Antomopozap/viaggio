@@ -1,2 +1,37 @@
-h1 {
+#home-container {
+  height: 92vh;
+  width: 100vw;
+  position: relative;
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#home-container img {
+  width: 100vw;
+}
+#home-container h1 {
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  z-index: 2;
+  font-size: 8rem;
+  text-align: center;
+}
+#home-container h2 {
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  z-index: 2;
+  font-size: 4rem;
+  text-align: center;
+}
+.funny {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
 }
