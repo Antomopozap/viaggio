@@ -11,6 +11,6 @@ function funcpopup() {
 }
 //!Cambio di titolo
 setTimeout(() => {
-  newPageTitle = "Itinerario per viaggiare";
+  newPageTitle = "Agenzia Viaggi";
   document.title = newPageTitle;
 }, 5000);

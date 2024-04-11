@@ -87,8 +87,8 @@ h4 {
   background: conic-gradient(transparent 270deg, blue, transparent);
 }
 #mf::before {
-  background: conic-gradient(transparent 270deg, white, transparent);
+  background: conic-gradient(transparent 270deg, red, transparent);
 }
 #dumbshit::before {
-  background: conic-gradient(transparent 270deg, white, transparent);
+  background: conic-gradient(transparent 270deg, rgb(153, 0, 255), transparent);
 }
