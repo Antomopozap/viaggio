@@ -1,0 +1,94 @@
+#page4 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  height: 92vh;
+  width: 100vw;
+  align-items: center;
+}
+.who-card {
+  position: relative;
+  display: flex;
+  background-color: #070329;
+  width: 20vw;
+  height: 55vh;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 25px;
+}
+.who-card img {
+  z-index: 10;
+  position: absolute;
+  top: 2vh;
+  width: 17vh;
+  border-radius: 50%;
+}
+.txt h2,
+h3,
+h4 {
+  z-index: 10;
+  font-size: 1.5rem;
+  margin: auto;
+}
+.txt {
+  position: absolute;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.txt h4 {
+  font-style: italic;
+}
+
+.fancy {
+  --offset: 3px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Conic gradient */
+.fancy::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+
+/* Overlay */
+.fancy::after {
+  content: "";
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+#goat::before {
+  background: conic-gradient(transparent 270deg, blue, transparent);
+}
+#mf::before {
+  background: conic-gradient(transparent 270deg, white, transparent);
+}
+#dumbshit::before {
+  background: conic-gradient(transparent 270deg, white, transparent);
+}

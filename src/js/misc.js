@@ -9,3 +9,8 @@ function funcpopup() {
     gsap.to(popup, 0.5, { opacity: 0 });
   }, 1500);
 }
+//!Cambio di titolo
+setTimeout(() => {
+  newPageTitle = "Itinerario per viaggiare";
+  document.title = newPageTitle;
+}, 5000);
