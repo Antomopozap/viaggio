@@ -38,25 +38,3 @@ function morte(n) {
   gsap.to(fifth, 0.1, { opacity: 0 });
   gsap.to(selected, 0.2, { opacity: 1 });
 }
-
-//!Preload images
-var images = [];
-function preload() {
-  for (var i = 0; i < arguments.length; i++) {
-    images[i] = new Image();
-    images[i].src = preload.arguments[i];
-    console.log(`Preloaded: ${i}`);
-  }
-}
-
-preload(
-  "../img/dumbshit.jpg",
-  "../img/goated.jpg",
-  "../img/mf.jpg",
-  "../img/pag1.jpg",
-  "../img/pag2.jpg",
-  "../img/pag3.jpg",
-  "../img/pag4.jpg",
-  "../img/pag5.jpg",
-  "../img/homeimg.jpg"
-);
