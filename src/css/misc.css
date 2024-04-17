@@ -17,7 +17,7 @@
 }
 #btncontainer {
   position: absolute;
-  bottom: 0;
+  bottom: 1vh;
   gap: 1rem;
   left: 50%;
   transform: translateX(-50%);
@@ -34,7 +34,9 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 2rem;
+  opacity: 0;
 }
 #pag1 {
   z-index: 3;
+  opacity: 1;
 }

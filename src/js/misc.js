@@ -30,9 +30,11 @@ function morte(n) {
   const second = document.getElementById(`pag2`);
   const third = document.getElementById(`pag3`);
   const fourth = document.getElementById(`pag4`);
+  const fifth = document.getElementById(`pag5`);
   gsap.to(first, 0.1, { opacity: 0 });
   gsap.to(second, 0.1, { opacity: 0 });
   gsap.to(third, 0.1, { opacity: 0 });
   gsap.to(fourth, 0.1, { opacity: 0 });
-  gsap.to(selected, 0.1, { opacity: 1 });
+  gsap.to(fifth, 0.1, { opacity: 0 });
+  gsap.to(selected, 0.2, { opacity: 1 });
 }
