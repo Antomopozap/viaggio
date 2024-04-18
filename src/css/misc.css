@@ -36,6 +36,14 @@
   border-radius: 2rem;
   opacity: 0;
 }
+#pag6 {
+  width: 160vh;
+  z-index: 100;
+  visibility: 0;
+}
+#pag7 {
+  width: 160vh;
+}
 #pag1 {
   z-index: 3;
   opacity: 1;
