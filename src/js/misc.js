@@ -26,7 +26,7 @@ setTimeout(() => {
 
 function morte(n) {
   if (n == 7) {
-    let url = "www.antomopozap.com/src/misc/exel.pdf";
+    let url = "/src/misc/exel.pdf";
     window.open(url, "_blank").focus();
   } else {
     const selected = document.getElementById(`pag${n}`);
